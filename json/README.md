@@ -1,6 +1,6 @@
 # Safe JSON
 
-This repository contains a fork of the `github.com/lukaszraczylo/go-jose/v3/json` package from Go 1.6.
+This repository contains a fork of the `github.com/lukaszraczylo/go-jose/v4/json` package from Go 1.6.
 
 The following changes were made:
 

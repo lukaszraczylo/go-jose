@@ -33,7 +33,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/lukaszraczylo/go-jose/v3/json"
+	"github.com/lukaszraczylo/go-jose/v4/json"
 
 	"github.com/lukaszraczylo/go-jose/v4"
 )
