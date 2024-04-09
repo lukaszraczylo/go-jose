@@ -3,7 +3,6 @@ module github.com/lukaszraczylo/go-jose/v4
 go 1.21
 
 require (
-	github.com/goccy/go-json v0.10.2
 	github.com/google/go-cmp v0.5.9
 	github.com/stretchr/testify v1.8.2
 	golang.org/x/crypto v0.22.0

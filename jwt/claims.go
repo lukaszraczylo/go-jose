@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/goccy/go-json"
+	"encoding/json"
 )
 
 // Claims represents public claim values (as specified in RFC 7519).

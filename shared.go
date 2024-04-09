@@ -23,7 +23,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/goccy/go-json"
+	"encoding/json"
 )
 
 // KeyAlgorithm represents a key management algorithm.

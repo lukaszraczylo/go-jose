@@ -21,7 +21,7 @@ import (
 	"bytes"
 	"reflect"
 
-	"github.com/goccy/go-json"
+	"encoding/json"
 
 	"github.com/lukaszraczylo/go-jose/v4"
 )

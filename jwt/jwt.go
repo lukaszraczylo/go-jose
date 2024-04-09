@@ -21,7 +21,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/goccy/go-json"
+	"encoding/json"
+
 	jose "github.com/lukaszraczylo/go-jose/v4"
 )
 

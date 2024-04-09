@@ -28,7 +28,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goccy/go-json"
+	"encoding/json"
 )
 
 type staticNonceSource string

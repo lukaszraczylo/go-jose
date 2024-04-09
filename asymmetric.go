@@ -29,7 +29,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/goccy/go-json"
+	"encoding/json"
+
 	josecipher "github.com/lukaszraczylo/go-jose/v4/cipher"
 )
 
