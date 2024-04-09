@@ -98,6 +98,14 @@ func deflate(input []byte) ([]byte, error) {
 	return output.Bytes(), err
 }
 
+// max returns the larger of two integers.
+func max(a, b int64) int64 {
+	if a > b {
+		return a
+	}
+	return b
+}
+
 // inflate decompresses the input.
 //
 // Errors if the decompressed data would be >250kB or >10x the size of the
