@@ -25,7 +25,7 @@ import (
 	"errors"
 	"fmt"
 
-	"encoding/json"
+	"github.com/lukaszraczylo/go-jose/v3/json"
 )
 
 // NonceSource represents a source of random nonces to go into JWS objects
@@ -71,7 +71,7 @@ type SignerOptions struct {
 	// Values will be serialized by [json.Marshal] and must be valid inputs to
 	// that function.
 	//
-	// [json.Marshal]: https://pkg.go.dev/encoding/json#Marshal
+	// [json.Marshal]: https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v3/json#Marshal
 	ExtraHeaders map[HeaderKey]interface{}
 }
 
@@ -81,7 +81,7 @@ type SignerOptions struct {
 // The v argument will be serialized by [json.Marshal] and must be a valid
 // input to that function.
 //
-// [json.Marshal]: https://pkg.go.dev/encoding/json#Marshal
+// [json.Marshal]: https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v3/json#Marshal
 func (so *SignerOptions) WithHeader(k HeaderKey, v interface{}) *SignerOptions {
 	if so.ExtraHeaders == nil {
 		so.ExtraHeaders = map[HeaderKey]interface{}{}

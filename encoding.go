@@ -27,7 +27,7 @@ import (
 	"strings"
 	"unicode"
 
-	"encoding/json"
+	"github.com/lukaszraczylo/go-jose/v3/json"
 )
 
 // Helper function to serialize known-good objects.

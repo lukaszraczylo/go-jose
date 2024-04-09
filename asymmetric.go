@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"encoding/json"
+	"github.com/lukaszraczylo/go-jose/v3/json"
 
 	josecipher "github.com/lukaszraczylo/go-jose/v4/cipher"
 )

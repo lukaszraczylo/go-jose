@@ -187,7 +187,7 @@ func ExampleSigned_privateClaims() {
 
 	// When setting private claims, make sure to add struct tags
 	// to specify how to serialize the field. The naming behavior
-	// should match the encoding/json package otherwise.
+	// should match the github.com/lukaszraczylo/go-jose/v3/json package otherwise.
 	privateCl := struct {
 		CustomClaim string `json:"custom"`
 	}{

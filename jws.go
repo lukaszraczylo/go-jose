@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"strings"
 
-	"encoding/json"
+	"github.com/lukaszraczylo/go-jose/v3/json"
 )
 
 // rawJSONWebSignature represents a raw JWS JSON object. Used for parsing/serializing.

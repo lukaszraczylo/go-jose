@@ -22,7 +22,7 @@ import (
 	"errors"
 	"fmt"
 
-	"encoding/json"
+	"github.com/lukaszraczylo/go-jose/v3/json"
 )
 
 // Encrypter represents an encrypter which produces an encrypted JWE object.
@@ -82,7 +82,7 @@ type EncrypterOptions struct {
 	// Values will be serialized by [json.Marshal] and must be valid inputs to
 	// that function.
 	//
-	// [json.Marshal]: https://pkg.go.dev/encoding/json#Marshal
+	// [json.Marshal]: https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v3/json#Marshal
 	ExtraHeaders map[HeaderKey]interface{}
 }
 
@@ -92,7 +92,7 @@ type EncrypterOptions struct {
 // The v parameter will be serialized by [json.Marshal] and must be a valid
 // input to that function.
 //
-// [json.Marshal]: https://pkg.go.dev/encoding/json#Marshal
+// [json.Marshal]: https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v3/json#Marshal
 func (eo *EncrypterOptions) WithHeader(k HeaderKey, v interface{}) *EncrypterOptions {
 	if eo.ExtraHeaders == nil {
 		eo.ExtraHeaders = map[HeaderKey]interface{}{}

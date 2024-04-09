@@ -23,7 +23,7 @@ import (
 	"errors"
 	"fmt"
 
-	"encoding/json"
+	"github.com/lukaszraczylo/go-jose/v3/json"
 )
 
 // KeyAlgorithm represents a key management algorithm.
@@ -189,7 +189,7 @@ type Header struct {
 	// The resulting value will be stored in this map, with the header
 	// parameter name as the key.
 	//
-	// [json.Unmarshal]: https://pkg.go.dev/encoding/json#Unmarshal
+	// [json.Unmarshal]: https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v3/json#Unmarshal
 	ExtraHeaders map[HeaderKey]interface{}
 }
 

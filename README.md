@@ -29,7 +29,7 @@ multiple recipients. It also comes with a small command-line utility
 ([`jose-util`](https://pkg.go.dev/github.com/go-jose/go-jose/jose-util))
 for dealing with JOSE messages in a shell.
 
-**Note**: We use a forked version of the `encoding/json` package from the Go
+**Note**: We use a forked version of the `github.com/lukaszraczylo/go-jose/v3/json` package from the Go
 standard library which uses case-sensitive matching for member names (instead
 of [case-insensitive matching](https://www.ietf.org/mail-archive/web/json/current/msg03763.html)).
 This is to avoid differences in interpretation of messages between go-jose and
