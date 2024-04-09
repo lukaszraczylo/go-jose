@@ -20,8 +20,8 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/go-jose/go-jose/v4"
-	"github.com/go-jose/go-jose/v4/jose-util/generator"
+	"github.com/lukaszraczylo/go-jose/v4"
+	"github.com/lukaszraczylo/go-jose/v4/jose-util/generator"
 )
 
 var allKeyAlgorithms = []jose.KeyAlgorithm{

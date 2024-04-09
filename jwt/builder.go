@@ -21,9 +21,9 @@ import (
 	"bytes"
 	"reflect"
 
-	"github.com/go-jose/go-jose/v4/json"
+	"github.com/goccy/go-json"
 
-	"github.com/go-jose/go-jose/v4"
+	"github.com/lukaszraczylo/go-jose/v4"
 )
 
 // Builder is a utility for making JSON Web Tokens. Calls can be chained, and
@@ -139,7 +139,7 @@ func normalize(i interface{}) (map[string]interface{}, error) {
 	}
 
 	d := json.NewDecoder(bytes.NewReader(raw))
-	d.SetNumberType(json.UnmarshalJSONNumber)
+	d.UseNumber()
 
 	if err := d.Decode(&m); err != nil {
 		return nil, err

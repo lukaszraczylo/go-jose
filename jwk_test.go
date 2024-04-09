@@ -32,7 +32,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-jose/go-jose/v4/json"
+	"github.com/goccy/go-json"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"

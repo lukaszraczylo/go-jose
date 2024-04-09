@@ -1,7 +1,7 @@
 # Go JOSE
 
-[![godoc](https://pkg.go.dev/badge/github.com/go-jose/go-jose/v4.svg)](https://pkg.go.dev/github.com/go-jose/go-jose/v4)
-[![godoc](https://pkg.go.dev/badge/github.com/go-jose/go-jose/v4/jwt.svg)](https://pkg.go.dev/github.com/go-jose/go-jose/v4/jwt)
+[![godoc](https://pkg.go.dev/badge/github.com/lukaszraczylo/go-jose/v4.svg)](https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v4)
+[![godoc](https://pkg.go.dev/badge/github.com/lukaszraczylo/go-jose/v4/jwt.svg)](https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v4/jwt)
 [![license](https://img.shields.io/badge/license-apache_2.0-blue.svg?style=flat)](https://raw.githubusercontent.com/go-jose/go-jose/master/LICENSE)
 [![test](https://img.shields.io/github/checks-status/go-jose/go-jose/v4)](https://github.com/go-jose/go-jose/actions)
 
@@ -39,9 +39,9 @@ libraries in other languages.
 
 [Version 4](https://github.com/go-jose/go-jose)
 ([branch](https://github.com/go-jose/go-jose/tree/main),
-[doc](https://pkg.go.dev/github.com/go-jose/go-jose/v4), [releases](https://github.com/go-jose/go-jose/releases)) is the current stable version:
+[doc](https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v4), [releases](https://github.com/go-jose/go-jose/releases)) is the current stable version:
 
-    import "github.com/go-jose/go-jose/v4"
+    import "github.com/lukaszraczylo/go-jose/v4"
 
 The old [square/go-jose](https://github.com/square/go-jose) repo contains the prior v1 and v2 versions, which
 are still useable but not actively developed anymore.
@@ -104,8 +104,8 @@ allows attaching a key id.
 
 ## Examples
 
-[![godoc](https://pkg.go.dev/badge/github.com/go-jose/go-jose/v4.svg)](https://pkg.go.dev/github.com/go-jose/go-jose/v4)
-[![godoc](https://pkg.go.dev/badge/github.com/go-jose/go-jose/v4/jwt.svg)](https://pkg.go.dev/github.com/go-jose/go-jose/v4/jwt)
+[![godoc](https://pkg.go.dev/badge/github.com/lukaszraczylo/go-jose/v4.svg)](https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v4)
+[![godoc](https://pkg.go.dev/badge/github.com/lukaszraczylo/go-jose/v4/jwt.svg)](https://pkg.go.dev/github.com/lukaszraczylo/go-jose/v4/jwt)
 
 Examples can be found in the Godoc
 reference for this package. The
