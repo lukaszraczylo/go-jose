@@ -14,7 +14,6 @@ import (
 	"math/big"
 	"net"
 	"reflect"
-	"slices"
 	"strconv"
 	"strings"
 	"testing"
@@ -1999,7 +1998,7 @@ func TestByteKind(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Unmarshal error: %v", err)
 	}
-	if !slices.Equal(got, want) {
+	if !reflect.DeepEqual(got, want) {
 		t.Fatalf("Marshal/Unmarshal mismatch:\n\tgot:  %v\n\twant: %v", got, want)
 	}
 }
@@ -2018,7 +2017,7 @@ func TestSliceOfCustomByte(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Unmarshal error: %v", err)
 	}
-	if !slices.Equal(got, want) {
+	if !reflect.DeepEqual(got, want) {
 		t.Fatalf("Marshal/Unmarshal mismatch:\n\tgot:  %v\n\twant: %v", got, want)
 	}
 }

@@ -1042,6 +1042,25 @@ type field struct {
 	encoder encoderFunc
 }
 
+// byIndex sorts field by index sequence.
+type byIndex []field
+
+func (x byIndex) Len() int { return len(x) }
+
+func (x byIndex) Swap(i, j int) { x[i], x[j] = x[j], x[i] }
+
+func (x byIndex) Less(i, j int) bool {
+	for k, xik := range x[i].index {
+		if k >= len(x[j].index) {
+			return false
+		}
+		if xik != x[j].index[k] {
+			return xik < x[j].index[k]
+		}
+	}
+	return len(x[i].index) < len(x[j].index)
+}
+
 // typeFields returns a list of fields that JSON should recognize for the given type.
 // The algorithm is breadth-first search over the set of structs to include - the top struct
 // and then any reachable anonymous structs.
@@ -1176,7 +1195,7 @@ func typeFields(t reflect.Type) structFields {
 		if x[i].tag != x[j].tag {
 			return x[i].tag
 		}
-		return slices.Compare(x[i].index, x[j].index) == -1
+		return byIndex(x).Less(i, j)
 	})
 
 	// Delete all fields that are hidden by the Go rules for embedded fields,
@@ -1208,9 +1227,7 @@ func typeFields(t reflect.Type) structFields {
 	}
 
 	fields = out
-	slices.SortFunc(fields, func(i, j field) int {
-		return slices.Compare(i.index, j.index)
-	})
+	sort.Sort(byIndex(fields))
 
 	for i := range fields {
 		f := &fields[i]
